@@ -1,0 +1,120 @@
+/* 
+    PLEASE EXCUSE THIS ATTROCIOUS MESS.
+    I CAN'T WRAP MY MIND AROUND CSS TO SAVE MY LIFE.
+*/
+
+/* General Rules */
+Rule {
+    height: 1;
+    margin: 0;
+}
+
+Horizontal {
+    height: auto;
+}
+
+VerticalScroll {
+    height: 1fr;
+}
+
+.hatch {
+    hatch: right $panel 100%;
+}
+
+/* ExtensionWidget Styles */
+ExtensionWidget {
+    height: auto;
+    width: 100%;
+    background: $panel 80%;
+    padding: 1;
+    margin: 1;
+
+    & Collapsible {
+        height: auto;
+        content-align: left middle;
+    }
+
+    & .static {
+        height: 3;
+        content-align: left middle;
+    }
+
+    & .label {
+        width: auto;
+    }
+
+    & .name {
+        width: 1fr;
+    }
+
+    & Horizontal {
+        margin-bottom: 1;
+    }
+
+    & Markdown {
+        height: auto;
+    }
+
+    & Button {
+        align: right middle;
+    }
+}
+
+/* SearchScreen Styles */
+SearchScreen {
+    height: 50%;
+    width: 50%;
+    padding: 1;
+
+    .centered_full_width {
+        align: center middle;
+        content-align: center middle;
+        width: 100%;
+    }
+}
+
+/* SearchWidget Styles */
+SearchWidget {
+    padding: 1;
+    height: 5;
+
+    & Input {
+        width: 1fr;
+    }
+
+    & Static {
+        width: auto;
+        height: 4;
+        text-style: bold;
+        content-align: left middle;
+    }
+
+    & ProgressBar {
+        width: 1fr;
+    }
+
+    & Button {
+        width: auto;
+    }
+}
+
+/* DownloadProgressWidget Styles */
+DownloadProgressWidget {
+    height: 4;
+    background: $panel 40%;
+    margin: 1;
+    padding: 1;
+
+    & #log {
+        width: auto;
+    }
+
+    & ProgressBar {
+        width: auto;
+    }
+
+    & Static {
+        width: auto;
+        margin: 0 1 0 1;
+    }
+}

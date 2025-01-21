@@ -1,0 +1,3 @@
+from .download_progress_widget import DownloadProgressWidget
+from .extension_widget import ExtensionWidget
+from .search_widget import SearchWidget
